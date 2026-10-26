@@ -1,12 +1,12 @@
 import streamlit as st
 from datetime import date
 
-from data.retriever import search_meeting_notes
-from data.agent_tools import (
+from retriever import search_meeting_notes 
+from agent_tools import (
     identify_pending_tasks,
     generate_meeting_questions,
 )
-from data.ai_agent import generate_ai_advice
+from ai_agent import generate_ai_advice
 
 st.set_page_config(
     page_title="Meeting Preparation Advisory Agent",
